@@ -1,0 +1,32 @@
+<android.support.v4.widget.DrawerLayout 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/drawerLayout"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"	>
+			    
+	    <FrameLayout 
+	         android:id="@+id/mainContent"
+			 android:layout_height="match_parent"
+			 android:layout_width="match_parent">
+			 
+	        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button3" />  
+	    </FrameLayout>    
+	    <ListView
+	         android:id="@+id/drawerList"
+	         android:entries="@array/Tools"
+			 android:layout_height="match_parent"
+			 android:layout_width="240sp"
+			 android:layout_gravity="left"
+			 android:clickable="true"  >    
+	    </ListView>  
+        
+</android.support.v4.widget.DrawerLayout>
+
+
+
+<!-- From: file:/home/darren/AndroidStudioProjects/GoFitYourself/app/src/main/res/layout/activity_profile_page.xml -->

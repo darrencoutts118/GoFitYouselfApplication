@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gofityourself"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <activity
+            android:name="com.example.getfityourself.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.getfityourself.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName="com.example.getfityourself.MainActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.getfityourself.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.getfityourself.QuestionsActivity"
+            android:label="@string/title_activity_questions"
+            android:parentActivityName="com.example.getfityourself.ProfilePageActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.getfityourself.ProfilePageActivity" />
+        </activity>
+        <activity
+            android:name="com.example.getfityourself.CustomOnItemSelectedListener"
+            android:label="@string/title_activity_custom_on_item_selected_listener" >
+        </activity>
+        <activity
+            android:name="com.example.getfityourself.BmiCalculatorActivity"
+            android:label="@string/title_activity_bmi_calculator"
+            android:parentActivityName="com.example.getfityourself.ProfilePageActivity" >
+        </activity>
+        <activity
+            android:name="com.example.getfityourself.ProfilePageActivity"
+            android:label="@string/title_activity_profile_page" >
+        </activity>
+        <activity
+            android:name="com.example.getfityourself.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:parentActivityName="com.example.getfityourself.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.getfityourself.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.example.getfityourself.StopwatchActivity"
+            android:label="@string/title_activity_stopwatch" >
+        </activity>
+        <activity
+            android:name="com.example.getfityourself.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name="com.example.getfityourself.ScheduleActivity"
+            android:label="@string/title_activity_schedule" >
+        </activity>
+    </application>
+
+</manifest>

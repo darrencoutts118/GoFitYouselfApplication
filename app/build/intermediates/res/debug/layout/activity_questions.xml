@@ -1,0 +1,291 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.getfityourself.QuestionsActivity"
+    android:orientation = "vertical" >
+    
+
+    
+    <TextView android:text="@string/title_activity_questions"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView" />
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:orientation="vertical" >
+
+         <TextView
+             android:id="@+id/textView3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignEnd="@+id/textView2"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/textView2"
+             android:layout_marginTop="38dp"
+             android:text="When would you like to complete a workout?"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textSize="17dp" />
+
+         <TextView
+             android:id="@+id/textView4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignEnd="@+id/textView2"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/textView2"
+             android:layout_marginTop="12dp"
+             android:text="Monday"
+             android:textAppearance="?android:attr/textAppearance" />
+
+         <Spinner
+             android:id="@+id/day1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView4"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/textView3"
+             android:entries="@array/times"
+             android:focusable="true" />
+
+         <TextView
+             android:id="@+id/textView4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignEnd="@+id/textView2"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/textView2"
+             android:layout_marginTop="12dp"
+             android:text="Tuesday"
+             android:textAppearance="?android:attr/textAppearance" />
+
+         <Spinner
+             android:id="@+id/day2"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView4"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/textView3"
+             android:entries="@array/times" />
+
+         <TextView
+             android:id="@+id/textView4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignEnd="@+id/textView2"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/textView2"
+             android:layout_marginTop="12dp"
+             android:text="Wednesday"
+             android:textAppearance="?android:attr/textAppearance" />
+
+         <Spinner
+             android:id="@+id/day3"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView4"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/textView3"
+             android:entries="@array/times" />
+
+         <TextView
+             android:id="@+id/textView4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignEnd="@+id/textView2"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/textView2"
+             android:layout_marginTop="12dp"
+             android:text="Thursday"
+             android:textAppearance="?android:attr/textAppearance" />
+
+         <Spinner
+             android:id="@+id/day4"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView4"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/textView3"
+             android:entries="@array/times" />
+
+         <TextView
+             android:id="@+id/textView4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignEnd="@+id/textView2"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/textView2"
+             android:layout_marginTop="12dp"
+             android:text="Friday"
+             android:textAppearance="?android:attr/textAppearance" />
+
+         <Spinner
+             android:id="@+id/day5"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView4"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/textView3"
+             android:entries="@array/times" />
+
+         <TextView
+             android:id="@+id/textView4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignEnd="@+id/textView2"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/textView2"
+             android:layout_marginTop="12dp"
+             android:text="Saturday"
+             android:textAppearance="?android:attr/textAppearance" />
+
+         <Spinner
+             android:id="@+id/day6"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView4"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/textView3"
+             android:entries="@array/times" />
+
+         <TextView
+             android:id="@+id/textView4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignEnd="@+id/textView2"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/textView2"
+             android:layout_marginTop="12dp"
+             android:text="Sunday"
+             android:textAppearance="?android:attr/textAppearance" />
+
+         <Spinner
+             android:id="@+id/day7"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView4"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/textView3"
+             android:entries="@array/times" />
+
+
+
+
+         <View
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="@android:color/darker_gray"/>
+
+
+
+
+        <!-- NumberPicker
+             android:id="@+id/pickNumber1"
+             android:layout_width="68dp"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             android:id="@+id/textView5"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignEnd="@+id/textView4"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/textView4"
+             android:layout_marginTop="38dp"
+             android:text="How long would you like your workouts to be"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         <Spinner
+             android:id="@+id/spinner3"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView4"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/textView3"
+             android:entries="@array/maximum_time_arrays" />
+
+         <TextView
+             android:id="@+id/textView6"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentStart="true"
+             android:layout_marginTop="38dp"
+             android:text="What type of workout do you want and what goals do you have ?"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         <Spinner
+             android:id="@+id/spinner4"
+             android:layout_width="match_parent"
+             android:layout_height="45dp"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/textView2"
+             android:entries="@array/goals_arrays" />
+
+
+         <TextView
+             android:id="@+id/textView7"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/textView6"
+             android:layout_marginTop="36dp"
+             android:text=" Would you like to do a full-body workout or split workout"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         <Spinner
+             android:id="@+id/spinner5"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/textView2"
+             android:entries="@array/type_arrays" />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/textView"
+             android:text="How many days would you like to rest between the workouts"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         <Spinner
+             android:id="@+id/spinner6"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/textView2"
+             android:layout_marginBottom="31dp"
+             android:entries="@array/rest_arrays" />
+
+            !-->
+
+          <Button
+                android:id="@+id/bSave"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="Save Settings"
+                android:textStyle="bold" />
+     </LinearLayout>
+
+     </ScrollView>
+
+
+</LinearLayout>
+<!-- From: file:/home/darren/AndroidStudioProjects/GoFitYourself/app/src/main/res/layout/activity_questions.xml -->

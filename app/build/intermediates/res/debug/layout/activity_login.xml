@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.getfityourself.LoginActivity" >
+
+            <Button
+                android:id="@+id/bSubmit"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="118dp"
+                android:text="@string/action_sign_in"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bSubmit"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="26dp"
+                android:ems="10"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/etPassword"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="19dp"
+                android:ems="10"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" >
+
+                <requestFocus />
+            </EditText>
+
+</RelativeLayout>
+<!-- From: file:/home/darren/AndroidStudioProjects/GoFitYourself/app/src/main/res/layout/activity_login.xml -->
